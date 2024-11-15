@@ -1,0 +1,20 @@
+.tryllekunstnerne {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+h1 {
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+footer {
+  background-color: #1d326f;
+  color: #fffdf0;
+}
+.lottiefile {
+  width: 5rem;
+}
