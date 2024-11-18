@@ -9,10 +9,35 @@
 
 h1 {
   text-align: center;
+  font-family: "Spicy Rice", serif;
+  font-weight: 400;
+  font-style: normal;
+
+  font-size: 7ch;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px; /* Sæt en højde på containeren */
+}
+
+.knap {
+  max-width: 100%;
+  height: auto;
 }
 
 h2 {
   text-align: center;
+  font-family: "Times New Roman", Times, serif;
+}
+
+p {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
 }
 
 h3 {
@@ -108,4 +133,17 @@ nav {
 }
 .burger {
   display: none;
+}
+
+body {
+  background-color: #fbfaf2;
+}
+
+.omostekst {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.ikoner {
+  text-align: center;
 }

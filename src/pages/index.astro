@@ -8,6 +8,12 @@ import "../styles/style.css";
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Londrina+Solid:wght@100;300;400;900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Londrina+Solid:wght@100;300;400;900&family=Spicy+Rice&display=swap" rel="stylesheet">
 		
 		<title>Astro</title>
 	</head>
@@ -94,7 +100,9 @@ For de største børn, er der kort tricks og små illusioner, der er sjove at ud
 			<img src="/public/img/katillustration.svg" alt="linkedin">	
 <h1>Støt op om MagicAid og doner i dag!</h1>
 
-<img src="/public/img/knap.svg" alt="linkedin">	
+<div class="container">
+  <img class="knap" src="/public/img/knap.svg" alt="linkedin">
+</div>
 
 <img src="/public/img/blåstjerner.jpg" alt="linkedin">	
 <h2>Besøg vores instagram! </h2>
@@ -109,18 +117,22 @@ For de største børn, er der kort tricks og små illusioner, der er sjove at ud
 		<footer>
 			<div class="footer">
 				<div>
-					<h3>om os</h3>
+					<h3>Om os</h3>
+					<div class="omostekst">
 <p>Nyheder 
 Kidsaid 
 Ambassadører
 Kidsaid organisation</p>
+
+					</div>
+
 				</div>
 <div>
 <h3>Kontakt</h3>
 	<p>Emma Iben Rosenkrantz Holm Eb@kidsaid.dk  Tlf.: +45 2025 1987</p>
 </div>
 			</div>	
-			<div>
+			<div class="ikoner">
 			<img src="/public/img/linkedinikon.svg" alt="linkedin">	
 		<img src="/public/img/instagramikon.svg" alt="instagram">	
 		<img src="/public/img/facebookikon.svg" alt="facebook">		
