@@ -7,8 +7,44 @@
 
 .tryllekunstnerne {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(4, 1fr);
   gap: 30px;
+  padding: 20px;
+}
+
+.kalender {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.billedegalleriandenrække {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  padding: 20px;
+}
+
+.tryllekunstnerne img,
+.billedegalleriandenrække img {
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .tryllekunstnerne {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .billedegalleriandenrække {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .tryllekunstnerne {
+    grid-template-columns: 1fr;
+  }
 }
 
 h1 {
