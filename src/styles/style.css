@@ -82,8 +82,36 @@ h1 {
 }
 
 .knap {
-  max-width: 100%;
+  width: 450px; /* Juster størrelsen efter behov */
   height: auto;
+  display: block;
+  margin: 0; /* Fjern margin */
+  padding: 0; /* Fjern padding */
+}
+
+@keyframes hop {
+  0%,
+  100% {
+    transform: translateY(0); /* Start- og slutposition */
+  }
+  50% {
+    transform: translateY(-20px); /* Hopper op */
+  }
+}
+
+.knap {
+  width: 450px; /* Juster størrelsen efter behov */
+  height: auto;
+  display: block;
+  margin: 0 auto; /* Centrer elementet horisontalt */
+  padding: 0;
+  animation: hop 1.5s ease-in-out infinite; /* Hop-animation */
+  transition: transform 0.3s ease; /* Glidende overgang ved hover */
+}
+
+.knap:hover {
+  animation: none; /* Stop hop-animationen ved hover */
+  transform: scale(1.05); /* Forstør knappen ved hover */
 }
 
 h2 {
@@ -127,14 +155,25 @@ footer {
 .progress-container {
   width: 100%;
   height: 8px;
-  background: #ccc;
+  background: #fffdf0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000; /* Sørger for, at progress baren er ovenpå andre elementer */
+  outline: none;
+  margin: 0;
+  padding: 0;
 }
 
 /* The progress bar (scroll indicator) */
 .progress-bar {
   height: 8px;
-  background: #04aa6d;
-  width: 0%;
+  background: #1d326f;
+  width: 0%; /* Starter med 0% bredde */
+  outline: none;
+  border: none;
+  margin: 0;
+  padding: 0;
 }
 
 header {
