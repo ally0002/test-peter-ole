@@ -162,3 +162,15 @@ body {
 .ikoner {
   text-align: center;
 }
+
+.billedgalleri {
+  display: grid;
+  padding: 100px;
+  margin: 40px;
+}
+
+.billedegalleriandenrække {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+}
