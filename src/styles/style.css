@@ -217,3 +217,26 @@ body {
   width: 764px;
   opacity: 0.5;
 }
+
+@keyframes moveRight {
+  0% {
+    transform: translateX(-100%); /* Start off-screen to the left */
+  }
+  50% {
+    transform: translateX(0); /* Move to the center */
+  }
+}
+
+.moving-headline {
+  font-size: 2em;
+  color: #333;
+  animation: moveRight 10s infinite;
+  text-align: center;
+  font-family: "Spicy Rice", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 12ch;
+  margin-bottom: 100px;
+  margin-top: 100px;
+  color: #1d326f;
+}
