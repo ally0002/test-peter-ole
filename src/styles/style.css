@@ -463,3 +463,48 @@ body {
 .herobillede {
   width: 521px;
 }
+
+.image-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 80px;
+  gap: 10px;
+}
+
+.storstjerne {
+  width: 100px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+/* Common blink animation for all images */
+.blink {
+  width: 100px; /* Adjust image size */
+  animation: blink-animation 1s infinite alternate;
+}
+
+/* Define staggered animations for each image */
+.blink1 {
+  animation-delay: 0s; /* No delay for the first image */
+}
+
+.blink2 {
+  animation-delay: 0.5s; /* Delay for the second image */
+}
+
+.blink3 {
+  animation-delay: 1s; /* Delay for the third image */
+}
+
+/* Define the keyframes for the blink animation */
+@keyframes blink-animation {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
