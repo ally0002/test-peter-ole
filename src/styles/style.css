@@ -150,7 +150,7 @@ footer {
 
 .instatekst {
   position: relative;
-  top: -200px;
+  top: -700px;
   font-size: 50px;
 }
 
@@ -172,7 +172,7 @@ overflow: hidden;  Skjuler indhold uden for containeren */
   display: flex;
   align-items: center;
   position: relative;
-  top: -100px;
+  top: -500px;
 }
 
 @keyframes scroll {
@@ -347,6 +347,8 @@ body {
 
 .kanin {
   text-align: right;
+  padding-right: 40px;
+  margin-top: -50px;
 }
 
 .scroll-container {
