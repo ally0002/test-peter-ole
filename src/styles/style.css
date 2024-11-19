@@ -561,14 +561,28 @@ body {
 
   .tryllekunstnerne {
     display: block;
+    width: auto;
   }
 
   .billedegalleriandenrække {
     grid-template-columns: 1fr; /* En kolonne på små skærme */
   }
 
+  .billedgalleri {
+    display: block;
+  }
+
   .tekst1 {
-    margin: 0;
+    margin: 50px;
     font-size: medium;
+  }
+
+  .moving-headline {
+    display: block;
+    width: auto;
+    font-size: 3.5rem;
+  }
+  .container {
+    height: 10px;
   }
 }
