@@ -141,14 +141,6 @@ h1 {
   margin-top: 250px;
 }
 
-.knap {
-  width: 450px; /* Juster størrelsen efter behov */
-  height: auto;
-  display: block;
-  margin: 0; /* Fjern margin */
-  padding: 0; /* Fjern padding */
-}
-
 @keyframes hop {
   0%,
   100% {
@@ -167,6 +159,8 @@ h1 {
   padding: 0;
   animation: hop 1.5s ease-in-out infinite; /* Hop-animation */
   transition: transform 0.3s ease; /* Glidende overgang ved hover */
+  top: 100px; /* 100px from the top of the screen */
+  left: 200px;
 }
 
 .knap:hover {
